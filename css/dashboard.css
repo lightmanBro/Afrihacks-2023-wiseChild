@@ -7,9 +7,90 @@
 }
 
 body{
-    background-color: #007bff;
-    background:linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.462)), url(../img/dashboard.jpeg);
+    background-color: white;
+    /* background:linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.462)), url(../img/dashboard.jpeg); */
     background-size: cover;
-    background-position: ;
+    /* background-position: ; */
     background-repeat: no-repeat;
 }
+.dashboard{
+    background-color: #007bff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.dashboard h3{
+   text-align: center;
+   font-size: 2rem;
+   /* background-color: black; */
+   width: 100%;
+}
+.courses{
+    background-color: white;
+}
+
+.courses h2{
+    color: black;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.course{
+    width: 25rem;
+    height: 25rem;
+    /* border: .25rem solid black; */
+    border-radius: .5rem;
+}
+.courses-display{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+.course-image,.course-desc{
+    /* border: .25rem solid black; */
+    height: 50%;
+}
+.course-image{
+    background: linear-gradient(rgba(0, 0, 0, 0.282),rgba(0, 0, 0, 0.266)), url(../img/pexels-ron-lach-7944399.jpg);
+    background-size: cover;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+.course-desc{
+    padding: 1rem;
+    background-color: rgb(53, 53, 53);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+.course-title{
+    color: green;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-rendering: optimizeLegibility;
+}
+.course-code{
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media only screen 
+   and (min-width : 320px) {
+    .course{
+        width: 50%;
+        height: 25rem;
+        /* border: .25rem solid black; */
+        border-radius: .5rem;
+    }
+    .course-image{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .course-desc{
+       height: fit-content;
+    }
+   }
