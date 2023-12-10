@@ -1,0 +1,69 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    text-decoration: none;
+    color: white;
+}
+
+.class-container-heading{
+    background: linear-gradient(rgba(0, 0, 255, 0.23),rgba(0, 0, 255, 0.263)), url(../img/pexels-ron-lach-7944399.jpg);
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 2rem;
+    color: white;
+    gap: 2rem;
+    /* align-items: left; */
+    /* justify-content: center; */
+}
+
+.course-desc,.class-container-heading span{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.class-container-heading span
+{
+    font-size: 3rem;
+}
+.class-actions{
+    display: flex;
+    gap: 2rem;
+}
+.actions{
+    width: 20%;
+    height: 5rem;
+    text-align: center;
+    background-color: grey;
+}
+
+@media only screen 
+   and (min-width : 320px) {
+
+    .class-container-heading{
+        height: 25vh;
+    }
+    .class-actions{
+        display: block;
+        width: 100%;
+    }
+    .actions{
+        color: black;
+        width: 100%;
+        margin: 1rem 0;
+        text-align: left;
+        padding-inline-start: 2rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        background-color: white;
+    }
+   }
