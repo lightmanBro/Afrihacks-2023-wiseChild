@@ -44,7 +44,10 @@ body{
 .courses{
     background-color: white;
 }
-
+iframe{
+    width: 100%;
+    height: 50vh;
+}
 .courses h2{
     color: black;
     font-size: 2rem;
@@ -101,8 +104,16 @@ body{
 }
 @media only screen 
    and (max-width : 749px) {
+    .container{
+        height: fit-content;
+    }
     .courses-display{
         display: block;
+        height: fit-content;
+    }
+    iframe{
+        width: 99%;
+        height: 30vh;
     }
     .course{
         width: 100%;
@@ -133,6 +144,7 @@ body{
         display: flex;
        justify-content: space-between;
        align-items: center;
+       background-color: white;
     }
     .menu span{
         font-size: 3rem;
