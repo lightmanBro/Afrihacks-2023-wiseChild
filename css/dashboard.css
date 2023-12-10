@@ -1,0 +1,15 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #007bff;
+    background:linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.462)), url(../img/dashboard.jpeg);
+    background-size: cover;
+    background-position: ;
+    background-repeat: no-repeat;
+}
