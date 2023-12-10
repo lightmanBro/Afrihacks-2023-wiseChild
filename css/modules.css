@@ -12,6 +12,21 @@
     gap: 2rem;
     flex-direction: column;
 }
+.heading{
+    background-color: hotpink;
+    width: 100%;
+    padding-inline-start: 2rem;
+    padding: 1rem;
+}
+.heading a{
+    font-size: 1.75rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+
+}
 .module{
     color: black;
     border: .15rem solid #eee;
@@ -23,7 +38,8 @@
    justify-content: space-around;
    border-bottom: .25rem solid #eee;
     background-color: #eee;
-    cursor: pointer;;
+    cursor: pointer;
+    padding: 1rem;
 }
 .module-title p{
     color: black;
@@ -47,7 +63,7 @@
 }
 
 @media only screen 
-   and (min-width : 320px) {
+   and (max-width : 749px) {
     .container{
         gap: 0;
     }
