@@ -31,7 +31,7 @@ Light Pink: #f7d7d7
 */
 body{
     background-color: #007bff;
-    background:linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.462)), url(./img/images\ \(12\).jpeg);
+    background:linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.462)), url(../img/index-image.jpeg);
     background-size: cover;
     /* background-position: right; */
     background-repeat: no-repeat;
