@@ -25,6 +25,16 @@ body{
     align-items: center;
     color: white;
 }
+.grade{
+    background-color: white;
+    padding: .5rem 1rem;
+    width: fit-content;
+    /* margin: 2rem; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hotpink;
+    border-radius: 3rem;
+}
 .dashboard h3{
    text-align: center;
    font-size: 2rem;
@@ -44,8 +54,10 @@ body{
 }
 .course{
     width: 25rem;
-    height: 25rem;
-    /* border: .25rem solid black; */
+    height: 40vh;
+    box-shadow: 1px 1px 5px -1px;
+    height: fit-content;
+    /* border: .01rem solid #eee; */
     border-radius: .5rem;
 }
 .courses-display{
@@ -62,8 +74,11 @@ body{
     background-size: cover;
     border-top-right-radius: .5rem;
     border-top-left-radius: .5rem;
+    padding: .5rem;
+    height: 10rem;
 }
 .course-desc{
+    height: 10rem;
     padding: 1rem;
     background-color: rgb(53, 53, 53);
     border-bottom-right-radius: .5rem;
@@ -81,7 +96,9 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
 }
-
+.menu{
+    display: none;
+}
 @media only screen 
    and (max-width : 749px) {
     .courses-display{
@@ -89,16 +106,22 @@ body{
     }
     .course{
         width: 100%;
-        height: 25rem;
+        height: 30vh;
+        margin-bottom: 2rem;
         /* border: .25rem solid black; */
         border-radius: .5rem;
+    }
+    .courses{
+        height: fit-content;
     }
     .course-image{
         background-size: cover;
         background-repeat: no-repeat;
+        height: 50%;
     }
     .course-desc{
        height: fit-content;
+       height: 50%;
     }
     .menu{
         /* background-color: #007bff; */
