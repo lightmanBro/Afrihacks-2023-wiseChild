@@ -30,7 +30,12 @@ Light Green: #d1fad1
 Light Pink: #f7d7d7
 */
 body {
-  background: linear-gradient(to top, #007bff, #007bff);
+  background: linear-gradient(to top,black, transparent),url(../img/pexels-maarten-van-den-heuvel-2284170.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  object-fit: contain;
   /* background:linear-gradient(rgba(0, 0, 0, 0.511),rgba(0, 0, 0, 0.462)), url(../img/index-image.jpeg); */
   /* background-size: cover; */
   /* background-position: right; */
@@ -116,7 +121,7 @@ button {
 
 @media only screen and (min-width: 320px) {
   body {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
   .container {
