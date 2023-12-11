@@ -23,7 +23,7 @@ body{
     font-weight: 700;
 }
 .dashboard{
-    background-color: #007bff;
+    background-color: #f1c40f;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -158,6 +158,6 @@ iframe{
     .menu span{
         font-size: 3rem;
         font-weight: normal;
-        color: hotpink;
+        color: #f1c40f;
     }
    }
