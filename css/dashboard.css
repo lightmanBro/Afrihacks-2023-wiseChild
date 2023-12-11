@@ -89,10 +89,17 @@ iframe{
     padding: .5rem;
     height: 10rem;
 }
-.course-desc{
+.course-desc1{
     height: 10rem;
     padding: 1rem;
-    background-color: rgb(53, 53, 53);
+    background-color: #2ecc71;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+.course-desc2{
+    height: 10rem;
+    padding: 1rem;
+    background-color: #3498db;
     border-bottom-right-radius: .5rem;
     border-bottom-left-radius: .5rem;
 }
@@ -139,10 +146,14 @@ iframe{
         background-repeat: no-repeat;
         height: 50%;
     }
-    .course-desc{
+    .course-desc1{
        height: fit-content;
        height: 50%;
     }
+    .course-desc2{
+        height: fit-content;
+        height: 50%;
+     }
     .menu{
         /* background-color: #007bff; */
         border-top: .1rem solid #eee;
