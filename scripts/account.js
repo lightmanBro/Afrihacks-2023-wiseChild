@@ -1,4 +1,7 @@
-
+const verifybtn = document.querySelector('#wallet-password-verify-btn');
+const verificationContainer = document.querySelector('.verification');
+const dashboard = document.querySelector('.account-dashboard');
+dashboard.style.display = 'none';
 function submitForm() {
     // Get all password input elements
     const passwordInputs = document.querySelectorAll(".password-input");
@@ -17,3 +20,8 @@ function submitForm() {
     form.submit();
   }
   
+verifybtn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    verificationContainer.style.display = 'none';
+    dashboard.style.display = 'block';
+})

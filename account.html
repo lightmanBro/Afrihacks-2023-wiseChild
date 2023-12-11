@@ -26,15 +26,56 @@
                     <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
                     <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
                 </div>
-                <button type="submit">Open</button>
+                <button id="wallet-password-verify-btn" type="submit">Open</button>
                 <a href="">Forgot Passoword?</a>
             </form>
         </div>
+
+
+        <div class="account-dashboard">
+            <a href="./dashboard.html">
+                <span class="material-symbols-outlined">
+                arrow_back
+                </span>
+            </a>
+            <div class="owner-details">
+                <div class="owner-image">
+                    <img src="" alt="">
+                </div>
+                <div class="owner-name">
+                    Fubara Joe
+                </div>
+            </div>
+            <p>Business balance</p>
+            <div class="balance-details">
+                <h2>₦7,850</h2>
+            </div>
+            <div class="account-details">
+    
+            </div>
+            <div class="services">
+                <div class="transfer">
+                    <span class="icon material-symbols-outlined">
+                        call_made
+                    </span>
+                    <span class="text">Send Money</span>
+                </div>
+                <div class="receive">
+                    <span class="icon material-symbols-outlined">
+                        call_received
+                    </span>
+                    <span class="text">Receive Money</span>
+                </div>
+            </div>
+            <div class="history">
+                <span class=" material-symbols-outlined">
+                    history
+                    </span>
+    
+            </div>
+        </div>
     </div>
 
-    <div class="account-dashboard">
-
-    </div>
     <script>
         function jumpToNextInput(input) {
             if (input.value.length === input.maxLength) {

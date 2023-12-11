@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 .body{
     /* width: 100vw; */
@@ -67,3 +68,129 @@
     margin: 1rem;
     font-size: 1rem;
 }
+
+
+
+
+
+/* Dashboard */
+.account-dashboard{
+    /* border: .25rem solid purple; */
+    width: inherit;
+    height: 100vh;
+    background-color: rgb(201, 200, 200);
+    padding: 2rem;
+}
+.account-dashboard a span{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.owner-details{
+    width: fit-content;
+    padding:1rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: #eee .25rem solid; */
+    width: 30%;
+}
+.owner-image{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: #eee .25rem solid;
+}
+.owner-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.balance-details{
+    background-color: rgb(220, 219, 219);
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 1rem 2.5rem;
+   /* display: flex;
+   align-items: center; */
+}
+.balance-details p{
+    font-weight: 600;
+}
+.balance-details h2{
+    font-size: 3rem;
+}
+.services{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+.transfer,.receive{
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(220, 219, 219);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon{
+    font-size: 5rem;
+}
+.history{
+    background-color: rgb(220, 219, 219);
+    height: fit-content;
+    margin-top: 1rem;
+}
+.history span{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #eee;
+    padding: 1rem;
+}
+@media only screen 
+   and (max-width : 749px) {
+    .owner-image{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        /* border: #eee .25rem solid; */
+    }
+    .balance-details,.owner-details{
+        width: 100%;
+    }
+    .balance-details{
+        text-align: center;
+    }
+    .balance-details p{
+        text-align: left;
+        padding: 1rem;
+    }
+     .icon{
+       font-size: 3.5rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       width: 100%;
+       height: 100%;
+       /* border: #eee .25rem solid; */
+       padding: 2rem;
+       background-color: #eee;
+    }
+    .text{
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        padding: 1rem;
+        /* width: 100%; */
+        /* background-color: #eee; */
+    }
+    .history{
+        height: 45vh;
+    }
+   }
