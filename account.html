@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/account.css">
+    <title>Account</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="verification">
+            <form action="">
+                <div class="pin-label">Enter Password</div>
+                <div class="password-container">
+                    <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
+                    <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
+                    <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
+                    <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
+                    <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
+                    <input type="password" class="password-input" maxlength="1" onkeyup="jumpToNextInput(this)">
+                </div>
+                <button type="submit">Open</button>
+                <a href="">Forgot Passoword?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="account-dashboard">
+
+    </div>
+    <script>
+        function jumpToNextInput(input) {
+            if (input.value.length === input.maxLength) {
+                const nextInput = input.nextElementSibling;
+                if (nextInput) {
+                    nextInput.focus();
+                }
+            } else if (event.key === "Backspace") {
+                const previousInput = input.previousElementSibling;
+                if (previousInput) {
+                    previousInput.focus();
+                    previousInput.value = "";
+                }
+            }
+        }
+    </script>
+    <script src="./scripts/account.js"></script>
+</body>
+
+</html>

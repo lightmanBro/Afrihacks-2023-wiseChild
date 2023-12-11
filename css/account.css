@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    /* width: 100vw; */
+}
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+.password-input {
+    width: 3rem;
+    height: 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: .5rem;
+}
+
+.verification{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.178),rgba(0, 0, 255, 0.178)), url('../img/piggy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: inherit;
+    /* border: .25rem solid purple; */
+}
+.verification form{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(.25rem);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 20%; */
+}
+.pin-label{
+    font-weight: 800;
+    font-size: 1.75rem;
+    color:white;
+    margin-bottom: 1rem;
+}
+.verification button{
+    width: fit-content;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: .25rem;
+    color: rgb(54, 53, 53);
+    font-weight: 800;
+}
+.verification form a{
+    color: white;
+    align-self: flex-end;
+    margin: 1rem;
+    font-size: 1rem;
+}
