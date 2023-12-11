@@ -78,7 +78,9 @@
     /* border: .25rem solid purple; */
     width: inherit;
     height: 100vh;
-    background-color: rgb(201, 200, 200);
+    background: linear-gradient(white,transparent), url(../img/pexels-dany-kurniawan-12357438.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 2rem;
 }
 .account-dashboard a span{

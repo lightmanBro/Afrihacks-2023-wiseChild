@@ -1,0 +1,23 @@
+{
+  "name": "afrihacks-2023-wisechild",
+  "version": "1.0.0",
+  "description": "Wisechild school for children financial Education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightmanBro/Afrihacks-2023-wiseChild.git"
+  },
+  "author": "Omotoso David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lightmanBro/Afrihacks-2023-wiseChild/issues"
+  },
+  "homepage": "https://github.com/lightmanBro/Afrihacks-2023-wiseChild#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}

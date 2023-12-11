@@ -17,6 +17,11 @@ body{
 .container{
     position: relative;
 }
+.daily-quote{
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 700;
+}
 .dashboard{
     background-color: #007bff;
     padding: 1rem;

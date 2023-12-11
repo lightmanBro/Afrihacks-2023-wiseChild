@@ -23,5 +23,7 @@ function submitForm() {
 verifybtn.addEventListener('click',(e)=>{
     e.preventDefault();
     verificationContainer.style.display = 'none';
-    dashboard.style.display = 'block';
+    setTimeout(() => {
+        dashboard.style.display = 'block';      
+    }, 2000);
 })
