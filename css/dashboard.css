@@ -52,6 +52,12 @@ body{
 #finance{
     background: linear-gradient(rgba(0, 0, 0, 0.282),rgba(0, 0, 0, 0.266)), url(../img/pexels-maarten-van-den-heuvel-2284170.jpg);
     background-size: cover;
+    background-position: center;
+}
+#enterpreneur{
+    background: linear-gradient(rgba(0, 0, 0, 0.282),rgba(0, 0, 0, 0.266)), url(../img//pexels-shree-narayan-rai-6166662.jpg);
+    background-size: cover;
+    background-position: center;
 }
 iframe{
     width: 100%;

@@ -1,5 +1,5 @@
 const express = require('express');
-
+const db = require('./backend/db/database')
 const app = express();
 
 app.use(express.json())
