@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
+const auth = require('../middleware/auth');
 
-const route = app.router();
+const route = express.Router();
 
 // Get weekly assignment details from the backend to post on each week.
 
@@ -12,3 +13,6 @@ const route = app.router();
 //List students name and grades on each week's assignments
 
 //Students does and submit assignments.
+
+
+module.exports = route;

@@ -15,14 +15,20 @@ body{
     background-repeat: no-repeat;
 }
 .container{
-    position: relative;
+    /* border: .25rem solid purple; */
+    /* display: flex; */
 }
 .daily-quote{
+    
     font-size: 1.5rem;
     padding: 1rem;
     font-weight: 700;
+    /* border: .25rem solid purple; */
+    margin-left: 15rem;
 }
 .dashboard{
+    /* position: relative; */
+    /* border: .25rem solid purple; */
     background-color: #f1c40f;
     padding: 1rem;
     display: flex;
@@ -45,9 +51,12 @@ body{
    font-size: 2rem;
    /* background-color: black; */
    width: 100%;
+   
 }
 .courses{
+    /* border: .25rem solid purple; */
     background-color: white;
+    margin-left: 15rem;
 }
 #finance{
     background: linear-gradient(rgba(0, 0, 0, 0.282),rgba(0, 0, 0, 0.266)), url(../img/pexels-maarten-van-den-heuvel-2284170.jpg);
@@ -128,8 +137,24 @@ iframe{
     font-size: 1.5rem;
     font-weight: 500;
 }
-.menu{
+.menu-big {
     display: none;
+    position: fixed;
+    top:4.5rem;
+    height: 98vh;
+    width: 10rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #f1c40f;
+    color: white;
+    /* height: 100%; */
+}
+.menu-big a span{
+    font-size: 5rem;
+    color: white;
 }
 @media only screen 
    and (max-width : 749px) {
@@ -139,6 +164,9 @@ iframe{
     .courses-display{
         display: block;
         height: fit-content;
+    }
+    .daily-quote{
+        margin-left: 0;
     }
     iframe{
         width: 99%;
@@ -153,6 +181,8 @@ iframe{
     }
     .courses{
         height: fit-content;
+        width: 100%;
+        margin-left: 0;
     }
     .course-image{
         background-size: cover;
@@ -182,8 +212,9 @@ iframe{
        justify-content: space-between;
        align-items: center;
        background-color: white;
+       /* border: .25rem solid purple; */
     }
-    .menu span{
+    .menu a span{
         font-size: 3rem;
         font-weight: normal;
         color: #f1c40f;

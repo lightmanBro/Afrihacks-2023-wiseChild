@@ -7,14 +7,10 @@ const courseSchema = mongoose.Schema({
     courseModules:[{type:mongoose.Types.ObjectId, ref:'Course'}]
 })
 
-const Course = mongoose.model('Course',courseSchema);
-
 const moduleSchema = mongoose.Schema({
     moduleTitle :{type:String,require:[true,'A weekly topic title is required']},
     activities:[{type: mongoose.Types.ObjectId, ref: 'Activity'}]
 })
-
-const Module = mongoose.model('Module',moduleSchema);
 
 const activitySchema = mongoose.Schema({
     title:{type:String},
@@ -23,11 +19,13 @@ const activitySchema = mongoose.Schema({
     links:[]
 })
 
-const Activity = mongoose.model('Activity',activitySchema);
 
 courseSchema.virtual('Data').get(function(){
     
 })
+const Course = mongoose.model('Course',courseSchema);
+const Module = mongoose.model('Module',moduleSchema);
+const Activity = mongoose.model('Activity',activitySchema);
 
 module.exports = {
     Course,
