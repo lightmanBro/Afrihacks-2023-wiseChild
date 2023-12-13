@@ -146,6 +146,7 @@
     height: fit-content;
     margin-top: 1rem;
     padding: .5rem;
+    height: fit-content;
 }
 .history span{
     display: block;
