@@ -1,0 +1,45 @@
+<!-- HTML for the new page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+</head>
+<body>
+
+    <h2>Welcome to individual courses</h2>
+
+    <div id="courseDetailsContainer">
+        <!-- Display course details here -->
+        {{#if course}}
+            <h3>{{course.name}}</h3>
+            <p>Grade: {{course.grade}}</p>
+            <!-- Add more fields as needed -->
+        {{else}}
+            <p>Course not found</p>
+        {{/if}}
+    </div>
+
+    {{!-- <script>
+        // JavaScript code for the new page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the course data from the server (you may fetch this from your server)
+            const courseData = {
+                name: "Math",
+                grade: "A"
+                // Add more properties as needed
+            };
+
+            // Update the DOM with the course details
+            const courseDetailsContainer = document.getElementById('courseDetailsContainer');
+            courseDetailsContainer.innerHTML = `
+                <h3>${courseData.name}</h3>
+                <p>Grade: ${courseData.grade}</p>
+                <!-- Add more fields as needed -->
+            `;
+        });
+    </script> --}}
+
+</body>
+</html>
